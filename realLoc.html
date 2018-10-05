@@ -61,7 +61,7 @@
             var lati = postion.coords.latitude;
             var longi = postion.coords.longitude;
             var coords = lati + ',' + longi;
-            
+
             var _src = 'https://maps.google.co.uk?q=' + coords + '&z=40&output=embed';
             document.getElementById('google_map').setAttribute('src', _src);
         }
@@ -69,7 +69,7 @@
 
             console.log(postionError);
         }
-        $('get_location').click(function() {
+        $('#get_location').click(function() {
 
             if (navigator.geolocation) {
 
