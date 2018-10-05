@@ -56,7 +56,7 @@
 
 
         function locationReceived(postion){
-                    debugger;
+                
                     console.log(postion);
                     var lati=postion.coords.latitude;
                     var longi= postion.coords.longitude;
@@ -65,7 +65,7 @@
                     document.getElementById('google_map').setAttribute('src', _src);
                 }
                 function locationNotReceived(postionError){
-                    debugger;
+                    
                     console.log(postionError);
                 }
         $(document).ready(function(){
@@ -77,7 +77,7 @@
                             timeout:Infinity,
                             maximumAge:0
                              }
-                    var id = navigator.geolocation.watchPosition(locationReceived,locationNotReceived,);
+                    var id = navigator.geolocation.watchPosition(locationReceived,locationNotReceived,opt);
 
                 }
         });
